@@ -1,0 +1,7 @@
+---
+
+- name: hosts file updated
+  template:
+    src: hosts.j2
+    dest: "{{ hosts_file }}"
+  become: true
